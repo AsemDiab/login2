@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="login.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="container" >
+    <div class="card">
+       <div class="front">
+        <div class="wrapper">
+        <form >
+            <h1>Login</h1>
+            <div class="input-box" >
+            <input type="text" placeholder="username">
+            <i class='bx bx-user-circle'></i>
+            </div>
+            <div class="input-box">
+            <input type="password" placeholder="passward" >
+            <i class='bx bxs-lock' ></i>
+        </div>
+        <div class ='rem'>
+            <input type="checkbox" >show passward</button>
+            <a href="https://youtu.be/haqVWhMcwd0?si=EP5CB_JvEsq7koRf">forget password ?</a>
+        </div>
+            <br>
+            <button>login</button>
+            <br>
+            <p>Dom't have an account?<a href="#" class="reg">Register</a></p>
+        </form>
+        </div>
+       </div>
+
+       <div class="back">
+
+        <div class="wrapper2">
+            <form >
+                <h1>sign Up</h1>
+                <div class="input-box2" >
+                <input type="text" placeholder="username">
+                <i class='bx bx-user-circle'></i>
+                </div>
+                <div class="input-box2">
+                <input type="password" placeholder="passward" >
+                <i class='bx bxs-lock' ></i>
+            </div>
+            <div class="input-box2">
+                <input type="password" placeholder="passward" >
+                <i class='bx bxs-lock' ></i>
+            </div>
+                <br>
+                <button>sign up</button>
+                <br>
+                <p>Do you have an account?<a href="#" class="reg1">login</a></p>
+            </form>
+            </div>
+
+       </div>
+    </div>
+</div>
+<script>
+      
+            var card = document.querySelector(".card");
+            let text= document.querySelector(".reg");
+            let text1= document.querySelector(".reg1");
+            var angle=180;
+            
+            text.addEventListener("click", function() {
+              card.style.transform = "rotateY("+180+"deg) rotateZ("+180+"deg)";
+              angle=(angle+180)%360;
+              console.log("hello reg0");
+            });
+            text1.addEventListener("click", function() {
+                console.log("hello reg1");
+              card.style.transform = "rotateY("+0+"deg) rotateZ("+0+"deg)";
+              angle=(angle+180)%360;
+            });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;  
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url('fly.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    
+}
+.wrapper{
+    width: 420px;
+    height: 500px;
+    background: rgba(0, 0,0, 0.15);
+    color:aliceblue;
+    position: relative;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    box-shadow: 2px 5px 2px black;
+
+}
+
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+
+}
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    background: transparent;
+   
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255,.2);
+    border-radius: 40px; 
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box i{
+    position: absolute;
+    right:20px;
+    top :50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.wrapper.rem{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px ;
+}
+.wrapper .rem a{
+    color: white;
+    text-decoration: none;
+}
+ .rem a :hover{
+    text-decoration: underline;
+}
+
+.wrapper button{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border :none;
+    outline:none;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,-1);
+    cursor: pointer;
+    font-size: 16px;
+    color:#333;
+    font-weight: 600;
+}
+.input-box input:focus{
+    border:  2px outset rgb(97, 88, 88) ;
+}
+
+button:hover{
+    background: rgb(79, 80, 80) !important;
+    box-shadow: 1px 3px 5px black;
+    
+}
+
+
+.wrapper p{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px 0 15px;
+}
+.wrapper p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.wrapper p a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+  .wrapper2{
+    width: 420px;
+    height: 500px;
+      background: transparent;
+      color:aliceblue;
+      position: relative;
+      border-radius: 10px;
+      padding: 30px 40px;
+      border: 2px solid rgba(255, 255, 255, .5);
+      box-shadow: 2px 5px 2px black;
+  
+  }
+  
+  
+  .wrapper2 h1{
+      font-size: 36px;
+      text-align: center;
+  
+  }
+  .wrapper2 .input-box2{
+      position: relative;
+    width: 100%;
+    height: 50px;
+      margin: 30px 0;
+     
+  }
+  .input-box2 input{
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      border: 2px solid rgba(255, 255, 255,.2);
+      border-radius: 40px; 
+      font-size: 16px;
+      color: #fff;
+      padding: 20px 45px 20px 20px;
+  }
+  
+  .input-box2 i{
+      position: absolute;
+      right:20px;
+      top :50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+  }
+  .wrapper2.rem{
+      display: flex;
+      justify-content: space-between;
+      font-size: 14.5px;
+      margin: -15px 0 15px ;
+  }
+  .wrapper2 .rem a{
+      color: white;
+      text-decoration: none;
+  }
+   .rem a :hover{
+      text-decoration: underline;
+  }
+  
+  .wrapper2 button{
+      width: 100%;
+      height: 40px;
+      background: #fff;
+      border :none;
+      outline:none;
+      border-radius: 50px;
+      box-shadow: 0 0 10px rgba(0,0,0,-1);
+      cursor: pointer;
+      font-size: 16px;
+      color:#333;
+      font-weight: 600;
+  }
+  .input-box2 input:focus{
+      border:  2px outset rgb(97, 88, 88) ;
+  }
+  
+  button:hover{
+      background: rgb(79, 80, 80) !important;
+      box-shadow: 1px 3px 5px black;
+      
+  }
+  
+  
+  .wrapper2 p{
+      font-size: 14.5px;
+      text-align: center;
+      margin-top: 20px 0 15px;
+  }
+  .wrapper2 p a{
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+  }
+  .wrapper2 p a:hover{
+      text-decoration: underline;
+  }
+
+
+
+  
+.container{
+    width: 350px;
+    height: 500px;
+    
+}
+.card{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.front,.back{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rbga(50,50,50,0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.back{
+    background:transparent;
+    transform: rotateY(180deg) rotatez(180deg);
+    display: flex;
+  justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.front{
+    background-size: auto;
+}
